@@ -42,7 +42,7 @@ nav ul{
 
 nav li{
     display: inline-block;
-    font-size: 1.75;
+    font-size: 1.75em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -57,7 +57,7 @@ nav li a{
 /*Show mobile class, hide tablet-desktop class*/
 .mobile{
     display: block;
-    column-width: 100%;
+    column-width: 100px;
 }
 
 .tablet-desktop{
@@ -86,7 +86,6 @@ main{
 }
 .side-image{
     width: 30%
-    margin 1%;
 }
 
 footer p{
