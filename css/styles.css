@@ -1,4 +1,5 @@
-body,head,nav,main,footer,h1,div,img{
+/*CSS Reset*/
+body,head,nav,main,footer,h1,div,img,ul{
     margin: 0;
     padding:0;
     border: 0; 
@@ -13,6 +14,14 @@ img{
     display: block;
 }
 
+/*Style Rules for Mobile Viewport*/
+
+nav{
+    padding:1%;
+    Margin-bottom: 1%
+}
+
+/*Style Rules for Header*/
 header{
     width: 25%;
     float: left;
@@ -28,13 +37,13 @@ nav{
 
 nav ul{
     list-style-type: none;
-    margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
 nav li{
     display: inline-block;
     font-size: 1.75;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav li a{
@@ -44,6 +53,15 @@ nav li a{
     padding: 0.5em 1em;
     text-decoration: none;
 
+}
+/*Show mobile class, hide tablet-desktop class*/
+.mobile{
+    display: block;
+    column-width: 100%;
+}
+
+.tablet-desktop{
+    display: none;
 }
 
 
@@ -77,3 +95,4 @@ footer p{
     color:olive;
     padding: 0 1em;
 }
+
