@@ -1,0 +1,313 @@
+/*CSS Reset*/
+body,head,nav,main,footer,h1,div,img,ul,figure,figcaption{
+    margin: 0;
+    padding:0;
+    border: 0; 
+}
+
+body{
+    background: linear-gradient(to left, #5a6882,#c8d3c8);
+}
+
+img{
+    max-width: 100%;
+    margin: auto;
+    display: block; 
+    align-content: center;
+}
+
+* {
+    box-sizing: border-box ;
+}
+
+/*Style Rules for Mobile Viewport*/
+
+
+position:-webkit-sticky>
+nav{
+    position: absolute;
+    padding:1%;
+    margin: auto;
+}
+
+nav ul{
+    list-style-type:none;
+    text-align:center;
+}
+
+/*Style Rules for Header*/
+header{
+    position:-webkit-sticky;
+    position: sticky;
+    background: linear-gradient(to left, #5a6882,#c8d3c8);
+    top: 0;
+    height:100px;
+}
+
+header img{
+    margin: 0 auto;
+    align-items: center;
+}
+
+h1{
+   color: #2b221d;
+   white-space: nowrap;
+   font-size: 72px;
+   width: 100%;
+   text-shadow: 5px 5px 5px #503b30;
+ 
+}
+
+nav{
+    width: 70%;
+    float: right;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: right;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1.75em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav li a{
+    display: block;
+    color: #2b221d;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+}
+
+/* pseudo class for nav */
+
+a:link{
+    color:#2b221d;
+}
+
+a:visited{
+    color: #c7cac7;
+}
+
+a:hover{
+    color:#b37555;
+}
+
+a:active{
+    color:#c8d3c8;
+}
+
+.hero{
+    width: 100px;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.small-photo {
+    max-width: 35%;
+    margin: auto;
+    display: block; 
+    align-content: center;
+}
+
+
+/*Show mobile class, hide tablet-desktop class*/
+.mobile{
+    display: block;
+    column-width: 100px;
+}
+
+.tablet-desktop{
+    display: none;
+
+}
+
+
+main{
+    clear: left;
+    background: linear-gradient(to left, #5a6882,#c8d3c8);
+    padding: 2%;
+    font-size: 1em;
+}
+
+h1{
+    font-size: 3em;
+    margin: auto;
+}
+
+.column-container{
+    column-count:2;
+    column-gap:30px;
+}
+.column-container p {
+    margin: 0 0 4em 0; 
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to left, #5a6882,#c8d3c8);
+    padding: 20px;
+    margin: auto;
+    
+   
+}
+.side-image{
+    width: 30%
+}
+
+img{
+    border: 4px solid #2b221d;
+    margin: auto;
+    display: block;  
+    align-content: center;
+}
+
+.white-bg{
+    background-color:#5a6882;
+    color:#fff;
+    border: 2px solid #2b221d;
+    max-width: 30em;
+    padding: 20px;   
+}
+
+.black-bg{
+    background-color:#c8d3c8;
+    color:#000;
+    border: 2px solid #2b221d;
+    max-width: 30em;
+    padding: 20px;
+   
+}
+
+nav li {
+    border-top:none;
+    display:inline-block;
+   
+}
+
+nav li:last-child {
+    border-right:none;
+}
+
+nav li a {
+    padding: 0.1em 0.75em;
+}
+
+
+/*pseudo 1 first letter not covered in course*/
+
+.lead {
+    float: left;
+    font-size: 3em;
+    line-height: 0.8;
+    margin-right: 8px;
+    font-weight: bold;
+    color:#c8d3c8;
+}
+
+/*pseudo 2 selector color not covered in course*/
+
+::selection{
+    background: #cea996;
+}
+
+
+.frame{
+    position:relative;
+    max-width:450px;
+    margin: 2% auto;
+}
+
+.pic-text{
+   position:absolute;
+   bottom: 0;
+   background: rgba(0,0,0,0.5);
+   color: #fff;
+   width: 100%;
+   padding: 20px;
+   text-align: center;
+   font-family: verdana,arial,sans-serif;
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
+footer p{
+    font-size: 0.75em;
+    text-align: center;
+    color: #2b221d;
+    padding: 0 1em;
+}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width:630px), print {}
+
+/*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+
+.tablet-desktop{
+    display: block;
+}  
+
+.mobile{
+    display: none;
+}
+
+/*Tablet Viewport: Style rule for header*/
+header{
+    padding-bottom: 2%;
+}
+
+/*Tablet Viewport:Style rules for nav area*/
+nav li {
+    border-top:none;
+    display:inline-block;
+   
+}
+
+nav li:last-child {
+    border-right:none;
+}
+
+nav li a {
+    padding: 0.1em 0.75em;
+}
+
+/*Tablet Viewport: Style rules for main content area*/
+main ul{
+    margin:0 0 4% 10%;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+
+/*Media Query for Large Desktop Viewports*/
+@media screen and (min-width:1921px){
+ 
+    #container{
+        width:1920px;
+        margin:0 auto;
+    }
+
+    table{
+        width:80%;
+    }
+}
+
+/*Media Query for Print*/
+@media print{
+
+}
+body{
+    background-color:#fff;
+    color:#000;
+}
